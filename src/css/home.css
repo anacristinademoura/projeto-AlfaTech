@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.limitar-secao {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+#topo{
+    width: 100%;
+    padding: 0 20px;
+    background-image: #fff;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+.topo-logo,
+.rodape-logo {
+    display: flex;
+}
+.topo-logo img,
+.rodape-logo img {
+    width: 80px;
+}
+.topo-logo div,
+.rodape-logo div {
+    margin-left: 15px;
+}
+.topo-logo p,
+.rodape-logo p {
+    color: #2f86d6;
+    font-weight: 600;
+}
+.topo-links a {
+    font-size: 18px;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color:#233032;
+}
+
+.topo-links a:hover,
+.container-copyright span,
+.secao-informacoes h2 span,
+.secao-tabela-de-palnos h2 span {
+    color: #2f86d6;
+}
+
+.secao-banner {
+    background-color: #2f86d6;
+}
+.container-banner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1024px;
+    padding: 85px 0;
+}
+.container-texto-banner {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+.container-texto-banner p {
+    font-size: 16px;
+    line-height: 26px;
+    word-spacing: 3px;
+}
+.container-texto-banner h2 {
+    font-size: 24px;
+    line-height: 40px;
+    margin: 20px 0;
+}
+
+.secao-primeiro-anuncio {
+    background-color: #23303e;
+    color: #fff;
+    padding: 0 20px;
+}
+.secao-primeiro-anuncio h2 {
+    margin-bottom: 5px;
+}
+.secao-primeiro-anuncio a {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #2f86d6;
+    padding: 20px;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.secao-informacoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 20px;
+}
+.secao-informacoes h2 {
+    max-width: 900px;
+    font-size: 32px;
+    margin-bottom: 70px;
+}
+
+.container-informacoes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-informacoes div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-informacoes div img {
+    width: 100px;
+    margin-bottom: 30px;
+}
+.container-informacoes div p {
+    margin-top: 20px;
+}
+
+.secao-tabela-de-palnos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 20px;
+    background-color: #f1f3f7;
+}
+.secao-tabela-de-palnos h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 70px;
+}
+.tabela {
+    border-radius: 4px;
+    box-shadow: 0 2px 40px 15px rgba(47, 134, 214, 1);
+}
+
+.celula-cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: #fff;
+}
+
+.celula-cabecalho h3 {
+    margin-bottom: 20px;
+}
+
+.celula-cabecalho img {
+    width: 100px;
+    margin-bottom: 15px;
+}
+.celula-cabecalho small {
+    width: 150px;
+    font-weight: 500;
+    color: #a89f9f;
+}
+
+.linha-da-tabela:nth-of-type(odd) {
+    background-color: #f6f6f6
+}
+
+.linha-da-tabela:nth-of-type(even) {
+    background-color: #fff
+}
+
+.linha-da-tabela td {
+    width: 250px;
+    max-width: 1024px;
+    text-align: center;
+    font-weight: 500;
+    padding: 15px;
+}
+
+.linha-da-tabela td:hover {
+    background-color: #2f86d6;
+    color: #fff;
+    cursor: pointer;
+}
+
+.secao-segundo-anuncio {
+    background-color: #2f86d6;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.secao-segundo-anuncio div h2 {
+    max-width: 550px;
+}
+
+.secao-segundo-anuncio div a {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #23303e;
+    padding: 20px;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.secao-primeiro-anuncio a::before,
+.secao-segundo-anuncio a::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url('../img/icone-foguete.png');
+    background-size: 20px 20px;
+    margin-right: 15px;
+}
+.secao-primeiro-anuncio a:hover,
+.secao-segundo-anuncio a:hover{
+    transition: 0.5s ease;
+    transform: scale(1.1);
+}
+
+#rodape {
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-texto-rodape {
+    text-align: center;
+    margin: 50px 0;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.container-copyright {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600px;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f1f3f7;
+}
+
+.container-copyright span {
+    font-weight: bold;
+}
